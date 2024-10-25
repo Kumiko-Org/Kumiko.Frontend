@@ -1,0 +1,18 @@
+.navbar-custom {
+    background-color: #563d7c !important; /* Dark Purple color */
+  }
+  
+  .navbar-custom .nav-link {
+    color: #ffffff !important; /* White text for links */
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: #ffffff !important; /* White text for the brand */
+  }
+  
+  .navbar-custom .btn-outline-light {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  
+  

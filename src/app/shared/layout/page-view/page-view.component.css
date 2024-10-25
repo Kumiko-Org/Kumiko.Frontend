@@ -1,0 +1,24 @@
+form {
+  width: 100%; /* Full width by default */
+  max-width: 500px; /* Limit the maximum width */
+}
+
+@media (min-width: 768px) { /* Medium and larger screens */
+  form {
+      width: 400px;
+  }
+}
+
+@media (min-width: 992px) { /* Large screens */
+  form {
+      width: 500px;
+  }
+}
+
+form .form-control {
+  margin-bottom: 15px;
+}
+
+form .btn-primary {
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sideBarTitle">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-dark" (click)="onHome()">Home</button>
+          </div>
+          <div class="d-grid gap-2 mt-1">
+            <button type="button" class="btn btn-dark" (click)="onClock()">Checador</button>
+          </div>
+          <div class="d-grid gap-2 mt-1">
+            <button type="button" class="btn btn-danger" (click)="onLogout()">Logout</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-9 col-lg-10">
+      <app-page-view></app-page-view>
+    </div>
+  </div>
+</div>
