@@ -6,28 +6,23 @@ export const routes: Routes = [
   {
     path: '', redirectTo: '/auth', pathMatch: 'full'
   },
-    {
-      path: 'auth',
-      loadChildren: () => import(`./modules/auth/auth.module`).then(m => m.AuthModule)
-    },
-    {
-        path: 'home',
-        component: PageBaseLayoutComponent,
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
-          }
-        ]
-    },
-    {
-      path: 'clock',
-      loadChildren: () => import(`./modules/clock/clock.module`).then(m => m.ClockModule)
-    },
-    {
-      path: '**',
-      redirectTo: '/auth'
-    }
+
+  {
+    path: 'auth',
+    loadChildren: () => import(`./modules/auth/auth.module`).then(m => m.AuthModule)
+  },
+
+
+  {
+    path: 'home',
+    component: PageBaseLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+      }
+    ]
+  },
 ];
 
 

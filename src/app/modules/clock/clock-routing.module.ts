@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ClockInPageComponent } from './pages/clock-in-page/clock-in-page.component';
+import { ClockAdminComponent } from './pages/clock-admin/clock-admin.component';
 
 const routes: Routes = [
   {
-    path: 'clock-in',
-    component: ClockInPageComponent
+    path: '',
+    component: ClockAdminComponent // This will now correctly load for the empty path
   },
   {
     path: '**',
-    redirectTo: '/clock/clock-in'
+    redirectTo: '' // Redirect any unknown routes to the default component (DhrCheckerPageComponent)
   }
 ];
 
@@ -18,5 +19,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class ClockRoutingModule {
-  
- }
+
+}

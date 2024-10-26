@@ -7,8 +7,12 @@ import { LoginPageComponent } from '../auth/pages/login-page/login-page.componen
 const routes: Routes = [
   {
     path: '',
-    component: HomePageComponent
+    component: HomePageComponent // This will now correctly load for the empty path
   },
+  {
+    path: '**',
+    redirectTo: '' // Redirect any unknown routes to the default component (DhrCheckerPageComponent)
+  }
 ];
 
 @NgModule({

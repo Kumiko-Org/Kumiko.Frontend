@@ -13,14 +13,14 @@ import { Router } from '@angular/router';
 })
 export class LoginPageComponent {
 
- constructor(private router: Router){
+  constructor(private router: Router) {
 
- }
+  }
 
 
- async onLogin(){
-  this.router.navigate(['/home']).then(result => {
-    console.log(result);
-});
+  async onLogin(event: Event) {
+    event.preventDefault();
+    console.log("Login button clicked!");
+    this.router.navigate(['/home']);
   }
 }

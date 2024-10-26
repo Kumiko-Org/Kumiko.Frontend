@@ -8,9 +8,8 @@ const routes: Routes = [
     component: LoginPageComponent
   },
   {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full' // Redirects `/auth` to `/auth/login` by default
+    path: '**',
+    redirectTo: '/auth/login'
   }
 ];
 
