@@ -15,7 +15,7 @@ export const routes: Routes = [
         component: PageBaseLayoutComponent,
         children: [
           {
-            path: 'home',
+            path: '',
             loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
           }
         ]
