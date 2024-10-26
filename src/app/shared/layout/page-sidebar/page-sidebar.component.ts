@@ -23,7 +23,6 @@ export class PageSidebarComponent {
   }
 
 
-
   public onHome(){
     this.router.navigate(['/home'])
   }
