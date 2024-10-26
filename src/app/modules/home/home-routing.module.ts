@@ -6,7 +6,7 @@ import { PageBaseLayoutComponent } from '../../shared/layout/page-base-layout/pa
 const routes: Routes = [
   {
     path: 'home',
-    redirectTo: '/home'
+    component: HomePageComponent
   },
 ];
 

@@ -10,9 +10,15 @@ import { PageHeaderComponent } from './layout/page-header/page-header.component'
   declarations: [],
   imports: [
     CommonModule,
+    PageViewComponent,
+    PageSidebarComponent,
+    PageHeaderComponent,
   ],
   exports: [
-
+    CommonModule,
+    PageViewComponent,
+    PageSidebarComponent,
+    PageHeaderComponent
   ]
 })
 export class SharedModule { }
