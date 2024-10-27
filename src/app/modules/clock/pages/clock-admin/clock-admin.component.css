@@ -1,0 +1,15 @@
+.row-container {
+  display: flex;
+  gap: 16px;
+  /* Adjusts space between columns */
+}
+
+.column {
+  flex: 1;
+  /* Each column will take up equal space */
+}
+
+.column:first-child {
+  margin-right: 16px;
+  /* Add space between columns if needed */
+}

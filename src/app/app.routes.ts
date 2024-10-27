@@ -23,6 +23,18 @@ export const routes: Routes = [
       }
     ]
   },
+
+  {
+    path: 'clock-admin',
+    component: PageBaseLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./modules/clock/clock.module').then(m => m.ClockModule)
+      }
+    ]
+  },
+
 ];
 
 

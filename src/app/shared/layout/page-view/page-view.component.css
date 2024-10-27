@@ -1,18 +1,33 @@
 form {
-  width: 100%; /* Full width by default */
-  max-width: 500px; /* Limit the maximum width */
+  width: 100%;
+  max-width: 500px;
 }
 
-@media (min-width: 768px) { /* Medium and larger screens */
+@media (min-width: 768px) {
   form {
-      width: 400px;
+    width: 400px;
   }
 }
 
-@media (min-width: 992px) { /* Large screens */
+@media (min-width: 992px) {
   form {
-      width: 500px;
+    width: 500px;
   }
+}
+
+.full-height {
+  height: 70vh;
+}
+
+/* Remove unwanted margin-top on .card */
+.card {
+  margin-top: 0;
+}
+
+/* Control spacing at the top */
+.card {
+  padding-top: 20px;
+  /* Adjust for spacing if needed */
 }
 
 form .form-control {

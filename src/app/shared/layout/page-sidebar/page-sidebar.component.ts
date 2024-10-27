@@ -12,28 +12,28 @@ import { Router, RouterOutlet } from '@angular/router';
     RouterOutlet,
     PageViewComponent,
     HomePageComponent
-],
+  ],
   templateUrl: './page-sidebar.component.html',
   styleUrl: './page-sidebar.component.css'
 })
 export class PageSidebarComponent {
 
-  constructor(private router: Router){
+  constructor(private router: Router) {
 
   }
 
 
-  public onHome(){
+  public onHome() {
     this.router.navigate(['/home'])
   }
 
 
-  public onClock(){
-    this.router.navigate(['/clock'])
+  public onClock() {
+    this.router.navigate(['/clock-admin'])
   }
 
 
-  public onLogout(){
+  public onLogout() {
     this.router.navigate(['/auth'])
   }
 }
